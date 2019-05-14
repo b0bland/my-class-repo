@@ -106,7 +106,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 6. Dimensions:
    * The entire content and the main section content area is `960px` wide.
 
-   ![Recommended Dimensions](Images/Recommended-Dimensions.png)
+   ![Recommended Dimensions](./Images/Recommended-Dimensions.png)
 
 ### Bonus
 
