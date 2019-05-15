@@ -1,0 +1,41 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.7;
+}
+
+.posrel {
+    position: relative;
+    width: 100%;
+    background: #eeeeee;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 150px;
+}
+
+.posabs {
+    position: absolute;
+    width: 30%;
+    height: 80px;
+    background: #999;
+    right: -25px;
+    bottom: 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.posfix {
+    background: #eeeeee;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 15%;   
+    height: 80px;
+    padding-top: 30px;
+}
+
+div {
+    border: black solid 1px;
+    opacity: 0.8;
+}
