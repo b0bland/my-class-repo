@@ -1,0 +1,14 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}

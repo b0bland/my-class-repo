@@ -1,0 +1,15 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    width: 75%;
+    margin: 50px auto;
+}
+
+div:hover {
+    color: brown;
+}
+
+
+div:active {
+    font-size: 22px;
+}

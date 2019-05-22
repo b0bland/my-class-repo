@@ -1,0 +1,110 @@
+/**
+ * Media Query Demo (note the commented rules)
+ **/
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+  The background color will be #ccc
+  at browser widths above 768px
+*/
+body {
+  /* Typography */
+  font-size: 18px;
+  line-height: 27px;
+
+  /* Visual */
+  background-color: #ccc;
+}
+
+/*
+  The width of the wrapper will be 1024px
+  at browser widths above 768px
+*/
+.wrapper {
+  /* Box-model */
+  width: 1024px;
+
+  /* Positioning */
+  margin: 40px auto;
+}
+
+#main-content,
+#sidebar {
+  /* Box-model */
+  width: 500px;
+  padding: 30px;
+}
+
+#main-content {
+  /* Positioning */
+  float: left;
+
+  /* Visual */
+  background: #fff;
+}
+
+#sidebar {
+  /* Positioning */
+  float: right;
+
+  /* Visual */
+  background: #eee;
+}
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+
+@media screen and (max-width: 800px) {
+
+  .wrapper {
+    width: 700px;
+    padding: 25px;
+    
+  }
+
+  body {
+    background-color: rgb(125, 87, 185);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  #main-content {
+    float: none;
+  }
+
+  #sidebar {
+    float: none;
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 600px;
+    padding: 25px;
+  }
+
+  #main-content {
+    float: none;
+  }
+
+  #sidebar {
+    float: none;
+    margin-top: 10px;
+  }
+}
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Game</title>
+</head>
+<body>
+    <h1>Question Game</h1>
+    <p>Press t for true, f for false.</p>
+    <p id="question"></p>
+    <script>
+        var question = [
+            { q: "Is 2 + 2 = 5?", a: "f"},
+            { q: "Is water wet?", a: "t"},
+            { q: "Is an orange orange?", a: "t"},
+            { q: "Is the world flat?", a: "f"},
+            { q: "Is the sky blue?", a: "t"},
+            { q: "Do ducks quack?", a: "t"},
+            { q: "Are there 20 hours in a day?", a: "f"},
+            { q: "Are blackboards typically purple?", a: "f"},
+            { q: "Is France in Europe?", a: "t"},
+            { q: "Is the mitochondria the powerhouse of the cell?", a: "t"}
+        ]
+
+        var pos = 0;
+        var score = 0;
+
+        if (pos < question.length) {
+            getQuestion()
+        }
+
+        function getQuestion() {
+            document.getElementById("question").textContent = question[pos].q
+        }
+
+        var answer, gate = true;
+
+        document.onkeypress = function(response) {
+            answer = response.key.toLowerCase();
+            if (((answer === "t") || (answer === "f")) && gate) {
+                if (answer === question[pos].a) {
+                    score++;
+                    alert("That is the correct answer!")
+                }
+                else {
+                    alert("That is the wrong answer!")
+                }
+                if (pos < (question.length - 1)) {
+                    pos++;
+                    getQuestion();
+                }
+                else {
+                    document.getElementById("question").textContent = ("Your score: " + score);
+                    gate = false;
+                }
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

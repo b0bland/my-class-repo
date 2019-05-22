@@ -1,0 +1,21 @@
+#b1 {
+    font-weight: bold;
+}
+
+#b2 {
+    font-size: 24px;
+}
+
+#b3 {
+    line-height: 50px;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    background: #dadada;
+}
